@@ -1,0 +1,133 @@
+/* Global Styles */
+
+/* Style the navbar */
+.navbar {
+    background-color: #333; /* Background color of the navbar */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  /* Style the navbar links */
+  .navbar ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .navbar ul li {
+    display: inline-block; /* Display the list items inline */
+  }
+  
+  .navbar ul li a {
+    display: block; /* Make the links display as blocks for easier styling */
+    color: white; /* Text color of the links */
+    text-decoration: none; /* Remove default underline */
+    padding: 20px; /* Padding around the links */
+    font-size: 20px; /* Increase the font size */
+  }
+  
+  /* Change the color of links on hover */
+  .navbar ul li a:hover {
+    background-color: #555; /* Background color of the links on hover */
+  }
+  
+  /* Add more CSS styles as needed */
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.course-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    width: 300px;
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-card h2 {
+    font-size: 1.5rem;
+    margin: 15px;
+}
+
+.course-card p {
+    margin: 0 15px 15px;
+}
+
+.course-card button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.course-card button:hover {
+    background-color: #45a049;
+}
+
+.search-filter {
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .course-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .course-card {
+        width: calc(100% - 20px);
+    }
+}
+
+.search-filter {
+    margin-bottom: 20px;
+    font-size: 20px; /* Increase font size */
+}
+
+.search-filter select {
+    padding: 10px; /* Increase padding */
+}
+
+#searchInput{
+    padding: 10px;
+}
+
+#searchButton{
+    padding: 10px;
+}

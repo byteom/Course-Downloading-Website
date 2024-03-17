@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Downloading Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CourseDownload</h1>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- Add more navbar items as needed -->
+            </ul>
+        </nav>
+
+        <div class="search-filter">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="programming">Programming</option>
+                <option value="design">Design</option>
+                <option value="business">Business</option>
+                <option value="marketing">Marketing</option>
+                <option value="photography">Photography</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <button onclick="filterCourses()" id="searchButton">Search</button>
+        </div>
+    </header>
+    
+    <div class="course-container">
+        <!-- Course cards will be added here -->
+
+        <!-- Apna College ALPHA Full Course -->
+        <div class="course-card" data-category="programming">
+            <img src="images\alpha_java.png" alt="Apna College ALPHA Full Course" />
+            <h2>Apna College ALPHA Full Course</h2>
+            <p class="info">Learn Full Stack Java Development from scratch.</p>
+            <button onclick="showDetails('Python')"><a id="details" href="Details\Apna_College_Alpha_java.html ">Deatils....</a></button>
+        </div>
+
+        <!-- web development fundatmentals -->
+        <div class="course-card" data-category="programming">
+            <img src="course2.jpg" alt="Web Development Fundamentals" />
+            <h2>Web Development Fundamentals</h2>
+            <p class="info">Explore the fundamentals of web development including HTML, CSS, and JavaScript.</p>
+            <button onclick="showDetails('WebDevelopment')">More Details</button>
+        </div>
+        <div class="course-card" data-category="design">
+            <img src="course3.jpg" alt="Graphic Design Principles" />
+            <h2>Graphic Design Principles</h2>
+            <p class="info">Master the principles of graphic design and visual communication.</p>
+            <button onclick="showDetails('GraphicDesign')">More Details</button>
+        </div>
+        <div class="course-card" data-category="programming">
+            <img src="course4.jpg" alt="Data Structures and Algorithms" />
+            <h2>Data Structures and Algorithms</h2>
+            <p class="info">Understand the fundamental data structures and algorithms used in computer science.</p>
+            <button onclick="showDetails('DataStructures')">More Details</button>
+        </div>
+        <div class="course-card" data-category="marketing">
+            <img src="course5.jpg" alt="Digital Marketing Essentials" />
+            <h2>Digital Marketing Essentials</h2>
+            <p class="info">Discover the essentials of digital marketing including SEO, SEM, and social media marketing.</p>
+            <button onclick="showDetails('DigitalMarketing')">More Details</button>
+        </div>
+
+
+
+        <div class="course-card" data-category="photography">
+            <img src="course6.jpg" alt="Photography Basics" />
+            <h2>Photography Basics</h2>
+            <p class="info">Learn the basics of photography including composition, lighting, and camera settings.</p>
+            <button onclick="showDetails('Photography')">More Details</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

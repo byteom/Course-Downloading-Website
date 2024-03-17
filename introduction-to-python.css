@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background: linear-gradient(to right, skyblue, white);
+    /* background: linear-gradient(to right, #ff8a00, #da1b60, #00d2ff); */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#course-title {
+    font-size: 36px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.CourseInformation {
+    text-align: center;
+    max-width: 800px;
+}
+
+.course-name {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #333;
+    margin-top: 30px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.bulleted-list {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.list-item {
+    margin-bottom: 10px;
+}
+
+.download button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.download button a {
+    text-decoration: none;
+    color: white;
+    ;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.download button:hover {
+    background-color: #45a049;
+     
+}
+#details{
+    text-decoration: none;
+    color: black;
+    size: 20px;
+}
